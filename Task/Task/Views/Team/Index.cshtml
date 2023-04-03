@@ -1,0 +1,39 @@
+﻿@model List<Member>  
+  
+<!-- ======= Team Section ======= -->
+<section id="team" class="team section-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Team</h2>
+            <h3>Our Hardworking <span>Team</span></h3>
+            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row">
+
+            @foreach (var member in Model)
+            {
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="~/assets/img/team/@member.BgImg" class="img-fluid" alt="">
+                            <div class="social">
+                                <a href=""><i class="@member.Icon1"></i></a>
+                                <a href=""><i class="@member.Icon2"></i></a>
+                                <a href=""><i class="@member.Icon3"></i></a>
+                                <a href=""><i class="@member.Icon4"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>@member.Name</h4>
+                            <span>@member.Position</span>
+                        </div>
+                    </div>
+                </div>
+            }
+            
+        </div>
+
+    </div>
+</section><!-- End Team Section -->
