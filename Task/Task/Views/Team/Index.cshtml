@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class="member-info">
-                            <h4>@member.Name</h4>
+                            <h4> <a asp-controller="team" asp-action="detail" asp-route-id="@member.Id" >@member.Name</a></h4>
                             <span>@member.Position</span>
                         </div>
                     </div>

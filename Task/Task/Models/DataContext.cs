@@ -9,6 +9,6 @@ namespace Task.Models
 
         }
 
-        public DbSet<Member> Members;
+        public DbSet<Member> Members { get; set; }
     }
 }
